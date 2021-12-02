@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QL9B6KLB4T"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-QL9B6KLB4T');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="images/initials.png"/>
+    <title>Contact</title>
+  </head>
+  <body>
+    <div class="skip"><a href="#main">Skip to Main Content</a></div>
+    <nav>
+        <ul>
+          <li><a href = "index.html">About Me</a></li>
+          <li><a href = "work.html">Coursework</a></li>
+          <li><a href = "projects.html">Projects</a></li>
+          <li class="navigate"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <main class="color">
+      
+        <header id="main">
+          <h1>Contact Me!</h1>
+        </header>
+
+      <div class="contact_grid_container">
+        <form
+        action="https://formspree.io/f/mdoyqgdv"
+        method="POST"
+        >
+          <label for="name_id">Your Name*</label>
+          <input type="text" placeholder="Your Name" id = "name_id" name="name" required>
+
+          <label for="email_id">Your Email*</label>
+          <input type="email" placeholder="Your Email" id = "email_id" name="email" required><br>
+
+          <label for="phone_id">Your Phone Number</label>
+          <input type="tel" id = "phone_id" name="phone" placeholder="(123) 456-7890">
+
+          <label for="msg">Leave A Message*</label>
+          <textarea placeholder="Your Message" id = "msg" name="mesg" required></textarea><br>
+
+          <!-- <input type="checkbox" checked="checked" name="remember" id = "cBox">
+          <label for ="cBox">Remember Me</label> -->
+
+          <input type="submit" value = "CONTACT ME">
+        </form>
+      </div>
+
+      <header>
+        <h4>Guess the Place (U of M Edition)</h4>
+        <p id=music>P.S. Listen to The Victors while you play!</p>
+        <div class = "options">
+          <button  id = "play">Play Music</button>
+          <button  id = "stop">Stop Music</button>
+        </div>
+        
+        <audio id="player1" src="assets/fight_song.m4r" type="audio/m4r"></audio>
+      </header>
+
+      <div class="contact2_grid_container">
+        <img class="contactimage" id="contactimage1" src="images/contact1.jpg" alt="Law Quad" />
+        <img class="contactimage" id="contactimage2" src="images/contact2.jpg" alt="Weiser Hall" />
+        <img class="contactimage" id="contactimage3" src="images/contact3.jpg" alt="UMich" />
+        <img class="contactimage" id="contactimage4" src="images/contact4.jpg" alt="W Washington" />
+        <img class="contactimage" id="contactimage5" src="images/contact5.jpg" alt="S State St" />
+        <img class="contactimage" id="contactimage6" src="images/contact6.jpg" alt="Big House" />
+      </div>
+      
+    </main>
+
+    <script src="js/music.js"></script>
+
+  <footer>
+    <p>&copy; 2021 Kashmira Reddy All Rights Reserved</p>
+  </footer> 
+</body>
+</html>
